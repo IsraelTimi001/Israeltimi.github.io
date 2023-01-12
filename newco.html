@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newco.css">
+</head>
+<body>
+  <div class="container"> 
+    <form name="form">
+      <div class="display">
+        <input type="text" placeholder="0" name='displayResult'>
+      </div>
+      <div class="calculator">
+        <input type="button" name="b7" onclick="calcNumbers(b7.value)" value="7">
+        <input type="button" name="b8" onclick="calcNumbers(b8.value)"value="8">
+        <input type="button" name="b9" onclick="calcNumbers(b9.value)"value="9">
+        <input type="button" name="bw" onclick="calcNumbers(bw.value)"value="/"> <br>
+        <input type="button" name="b4" onclick="calcNumbers(b4.value)"value="4">
+        <input type="button" name="b5" onclick="calcNumbers(b5.value)"value="5">
+        <input type="button" name="b6" onclick="calcNumbers(b6.value)"value="6">
+        <input type="button" name="be" onclick="calcNumbers(be.value)"value="*"> <br>
+        <input type="button" name="b1" onclick="calcNumbers(b1.value)"value="1">
+        <input type="button" name="b2" onclick="calcNumbers(b2.value)"value="2">
+        <input type="button" name="b3" onclick="calcNumbers(b3.value)"value="3">
+        <input type="button" name="bre" onclick="calcNumbers(bre.value)"value="-"><br>
+        <input type="button" name="b11" onclick="calcNumbers(b11.value)"value="."> 
+        <input type="button" name="b14" onclick="calcNumbers(b14.value)"value="0">
+        <input type="button" name="b13" onclick="calcNumbers(b13.value)"value="+">
+        <input type="button" id="clear" value="C"> <br>
+        <input type="button" id="equal" onclick="displayResult.value=eval(displayResult.value)" value="=">
+      </div>
+    </form>
+  </div>
+</body>
+<script src="newco.js"></script>
+</html>
